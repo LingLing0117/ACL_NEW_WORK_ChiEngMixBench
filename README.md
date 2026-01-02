@@ -45,8 +45,7 @@ Environment: This project requires Python 3.8 or higher.
 
 1. Install Dependencies
 
-```text
-Bash
+```Bash
 
 pip install -r requirements.txt
 ```
@@ -57,8 +56,7 @@ Key libraries: torch, transformers, sentence-transformers, numpy, scikit-learn.
 
 Note: You do NOT need an API key to reproduce the evaluation results on the provided dataset. An API key is only required if you intend to run the src/construction/ pipeline to build a new dataset from scratch.
 
-```text
-Bash
+```Bash
 
 export GEMINI_API_KEY="your_api_key_here"
 ```
@@ -70,8 +68,7 @@ We provide one-click scripts to reproduce the main experimental results reported
 1. Reproducing Spontaneity Metrics (RQ1)
 To calculate the English Preference Rate (EPR) and Contextual Spontaneity Gap (CSG):
 
-```text
-Bash
+```Bash
 
 # Run evaluation on the provided MCP dataset
 python src/experiments/metric_spontaneity.py \
@@ -85,8 +82,7 @@ Output will display the average CSG for Specialized vs. General terms.
 2. Reproducing Naturalness Scores (RQ2)
 To run the Expert Deviation Penalty (EDP) system on model outputs:
 
-```text
-Bash
+```Bash
 
 # Score the model responses
 python src/experiments/metric_naturalness.py \
@@ -103,8 +99,7 @@ Output will confirm the Naturalness Score (0-5 scale) and detailed penalty break
 Core Benchmark (data/processed/MCPdataset_cleaned_v1.json)
 The Minimal Contrastive Pairs (MCP) dataset follows this JSON schema:
 
-```text
-JSON
+```JSON
 
 {
   "id": 1024,
@@ -157,6 +152,7 @@ If you find this work useful, please cite:
   year={2026}
 }
 ```
+
 
 
 
