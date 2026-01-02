@@ -39,7 +39,8 @@ ChiEngMixBench_Supplementary/
 └── requirements.txt         # Python dependencies
 ```
 
-🛠️ Installation & Setup
+---
+## 🛠️ Installation & Setup
 Environment: This project requires Python 3.8 or higher.
 
 1. Install Dependencies
@@ -61,8 +62,9 @@ Bash
 
 export GEMINI_API_KEY="your_api_key_here"
 ```
+---
 
-🚀 Reproduction Guide
+## 🚀  Reproduction Guide
 We provide one-click scripts to reproduce the main experimental results reported in the paper.
 
 1. Reproducing Spontaneity Metrics (RQ1)
@@ -95,7 +97,9 @@ python src/experiments/metric_naturalness.py \
 
 Output will confirm the Naturalness Score (0-5 scale) and detailed penalty breakdown.
 
-📊 Data Description
+---
+
+## 📊 Data Discription
 Core Benchmark (data/processed/MCPdataset_cleaned_v1.json)
 The Minimal Contrastive Pairs (MCP) dataset follows this JSON schema:
 
@@ -122,11 +126,12 @@ is_hardcore: true if the term is a specialized Anchor Term (Specialized); false 
 Human Evaluation (results/human_eval/)
 Contains the scoring records from our "3+1" expert team.
 
-Score Range: 1.0 (Worst) to 5.0 (Best/Native).
+Score Range: 0.0 (Worst) to 5.0 (Best/Native).
 
 Annotators: Names have been replaced with aliases (Evaluator_A, Evaluator_B, etc.) to protect privacy.
 
-⚖️ License & Privacy
+---
+## ⚖️ License & Privacy
 License
 Code: Released under the MIT License.
 
@@ -139,7 +144,8 @@ PII Scrubbing: All Personally Identifiable Information (PII), including user IDs
 
 Usage: This release is intended solely for academic research purposes. Commercial use of the scraped community data is strictly prohibited.
 
-📜 Citation
+---
+## 📜 Citation
 If you find this work useful, please cite:
 
 ```text
@@ -151,5 +157,6 @@ If you find this work useful, please cite:
   year={2026}
 }
 ```
+
 
 
