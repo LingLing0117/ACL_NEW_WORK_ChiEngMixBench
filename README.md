@@ -27,6 +27,8 @@ ChiEngMixBench_Supplementary/
 │   └── human_eval/          # Anonymized human evaluation records
 │
 └── requirements.txt         # Python dependencies
+
+```text
 🛠️ Installation & Setup
 Environment: This project requires Python 3.8 or higher.
 
@@ -99,5 +101,6 @@ Annotators: Names have been replaced with aliases (Evaluator_A, Evaluator_B, etc
 
 ⚖️ License & Anonymity
 License: Apache 2.0.
+
 
 Anonymity Statement: This package is fully anonymized for ACL review. All user identifiers (UIDs), URLs, and timestamps from the raw crawled data have been removed. Authors' identities in the code metadata have been scrubbed.
