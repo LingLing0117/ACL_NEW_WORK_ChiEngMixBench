@@ -29,28 +29,29 @@ ChiEngMixBench_Supplementary/
 └── requirements.txt         # Python dependencies
 ```
 
-🛠️ Installation & Setup
+## 🛠️ Installation & Setup
 Environment: This project requires Python 3.8 or higher.
 
 Install Dependencies:
 
-Bash
+```Bash
 
 pip install -r requirements.txt
 Key libraries: torch, transformers, sentence-transformers, numpy, scikit-learn.
-
+```
 (Optional) API Key Configuration: Note: You do NOT need an API key to reproduce the evaluation results on the provided dataset. An API key (Google Gemini) is only required if you intend to run the src/construction/ pipeline to build a new dataset from scratch.
 
-Bash
+```Bash
 
 export GEMINI_API_KEY="your_api_key_here"
-🚀 Reproduction Guide
+```
+## 🚀 Reproduction Guide
 We provide one-click scripts to reproduce the main experimental results reported in the paper.
 
-1. Reproducing Spontaneity Metrics (RQ1)
+### 1. Reproducing Spontaneity Metrics (RQ1)
 To calculate the English Preference Rate (EPR) and Contextual Spontaneity Gap (CSG):
 
-Bash
+```Bash
 
 # Run evaluation on the provided MCP dataset
 python src/experiments/metric_spontaneity.py \
@@ -58,24 +59,25 @@ python src/experiments/metric_spontaneity.py \
     --data_file "data/processed/MCPdataset_cleaned_v1.json" \
     --output_file "results/reproduced_spontaneity.json"
 Output will display the average CSG for Specialized vs. General terms.
-
-2. Reproducing Naturalness Scores (RQ2)
+```
+### 2. Reproducing Naturalness Scores (RQ2)
 To run the Expert Deviation Penalty system on model outputs:
 
-Bash
+```Bash
 
 # Score the model responses
 python src/experiments/metric_naturalness.py \
     --input_file "results/naturalness/Qwen2.5-7B-Instruct.json" \
     --config_file "src/experiments/config/scoring_config.json" \
     --output_file "results/reproduced_naturalness_scores.json"
+```
 Output will confirm the Naturalness Score (0-5 scale) and detailed penalty breakdown.
 
-📊 Data Description
+## 📊 Data Description
 Core Benchmark (data/processed/MCPdataset_cleaned_v1.json)
 The Minimal Contrastive Pairs (MCP) dataset follows this JSON schema:
 
-JSON
+```JSON
 
 {
   "id": 1024,
@@ -86,6 +88,7 @@ JSON
   "sentence_B": "变换器的并行计算能力使其在自然语言处理任务中表现优异。",
   "context_prefix": "在讨论模型架构时..."
 }
+```
 sentence_A: The code-mixed sentence (Mixed).
 
 sentence_B: The monolingual Chinese sentence (Mono).
@@ -99,9 +102,10 @@ Score Range: 1.0 (Worst) to 5.0 (Best/Native).
 
 Annotators: Names have been replaced with aliases (Evaluator_A, Evaluator_B, etc.) for blind review.
 
-⚖️ License & Anonymity
+## ⚖️ License & Anonymity
 License: Apache 2.0.
 
 
 Anonymity Statement: This package is fully anonymized for ACL review. All user identifiers (UIDs), URLs, and timestamps from the raw crawled data have been removed. Authors' identities in the code metadata have been scrubbed.
+
 
