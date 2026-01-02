@@ -1,0 +1,194 @@
+[
+    {
+        "id": 1,
+        "term": "Unknown",
+        "prompt": "请从技术角度定义一下 AI 的核心目标及其在现代社会的应用。",
+        "response": "AI（Artificial Intelligence）的核心目标是开发能够模仿或超过人类认知能力的计算机系统。其主要目标是实现人工智能系统能够学习、推理、解决问题和适应环境的能力。\n\n在现代社会，AI应用广泛，包括：\n\n1.  **自然语言处理（NLP）**：Transformer等模型用于理解和生成人类语言，实现聊天机器人、语音助手和翻译等功能。\n2.  **图像和视频处理**：用于图像识别、目标检测、物体识别和视频分析，应用于安全监控、医疗成像和自驾车等领域。\n3.  **智能推荐系统**：使用协同过滤和内容基准过滤等技术，推荐电影、音乐和产品，提高用户体验。\n4.  **预测和预测分析**：利用机器学习和深度学习，预测用户行为、市场趋势和疾病预测等。\n5.  **自动驾驶**：使用Sensor和计算机视觉技术，实现无人驾驶和智能交通管理。\n6.  **医疗诊断和治疗**："
+    },
+    {
+        "id": 2,
+        "term": "Unknown",
+        "prompt": "相比于目前的 Narrow AI，实现 AGI 的主要技术瓶颈在哪里？",
+        "response": "实现强人工智能（AGI）的主要技术瓶颈在于如何让模型能够像人类一样学习、理解和推理复杂的概念和关系。目前，Transformer 等模型在处理序列数据方面表现出色，但仍然难以处理抽象的概念和多模态信息。"
+    },
+    {
+        "id": 3,
+        "term": "Unknown",
+        "prompt": "请解释 BERT 预训练阶段 MLM 任务的原理。",
+        "response": "BERT（Bidirectional Encoder Representations from Transformers）预训练阶段的MLM（Masked Language Modeling）任务的原理是：在原始文本中随机将15%的词语用特殊符号[MASK]替换，模型需要预测被遮蔽的词语。这样可以帮助模型学习到语言的上下文理解和词语的语义关系。"
+    },
+    {
+        "id": 4,
+        "term": "Unknown",
+        "prompt": "为什么 CNN 的卷积核设计比 Fully Connected Layer 更高效？",
+        "response": "CNN 的卷积核设计比 Fully Connected Layer 更高效的原因是因为它可以共享权重。卷积核在整个输入图像中滑动时，每个位置都使用相同的权重，节省了大量的参数和计算。"
+    },
+    {
+        "id": 5,
+        "term": "Unknown",
+        "prompt": "GPT 系列模型坚持使用 Decoder-only 架构的主要原因是什么？",
+        "response": "GPT 系列模型采用 Decoder-only 架构的主要原因是为了简化训练过程和提高效率。Decoder-only 架构能够独立训练 Transformer 模型，避免了 Encoder 和 Decoder 之间的复杂相互作用，从而减少训练时间和计算资源。"
+    },
+    {
+        "id": 6,
+        "term": "Unknown",
+        "prompt": "相比于 LSTM，GRU 在 Gating 机制上做了哪些简化以提升计算效率？",
+        "response": "相比于 LSTM，GRU 在 Gating 机制上做了简化，将两个Gating门（Input Gate 和 Output Gate）合并为一个Update Gate，从而减少了参数数量和计算量。"
+    },
+    {
+        "id": 7,
+        "term": "Unknown",
+        "prompt": "LSTM 是如何通过 Forget Gate 和 Input Gate 解决 RNN 的 Long-term Dependency 问题的？",
+        "response": "LSTM（Long Short-Term Memory）通过使用 Forget Gate 和 Input Gate 来解决 RNN 的 Long-term Dependency 问题。Forget Gate 控制前一个时刻的信息是否被遗忘，Input Gate 控制新信息的输入。 Forget Gate 的输出和 Input Gate 的输出通过计算门控加法来确定 LSTM 的当前状态。"
+    },
+    {
+        "id": 8,
+        "term": "Unknown",
+        "prompt": "ViT 是如何将 2D 图像转化为 Sequence 数据输入 Transformer 的？",
+        "response": "ViT（Vision Transformer）通过将 2D 图像分割成一个个 Patch，转化为 1D 序列输入 Transformer。"
+    },
+    {
+        "id": 9,
+        "term": "Unknown",
+        "prompt": "训练千亿参数级 LLM，通常需要哪些阶段的数据清洗和 Pre-training 预处理？",
+        "response": "训练千亿参数级 LLM 通常需要以下阶段的数据清洗和 Pre-training 预处理：\n\n1. **数据采集**: 收集大规模的文本数据，包括但不限于网页文本、书籍、论文、文章、聊天记录等。\n2. **数据清洗**: 删除噪音数据、低质量数据、重复数据等，确保数据的质量和准确性。\n3. **文本预处理**: 进行分词、停用词过滤、词形态学处理等，以获得标准化的输入。\n4. **语料库构建**: 将清洗后的数据构建成语料库，用于 Pre-training 和 fine-tuning。\n5. **Pre-training**: 使用大规模的语料库进行预训练，训练出一个初步的 LLM 模型。\n6. **过滤和优化**: 过滤掉低质量的预训练模型参数，优化模型的结构和参数。\n7. **Fine-tuning**: 将预训练模型进行微调，以适应具体的任务和数据集。\n8. **模型评估和调优**: 评"
+    },
+    {
+        "id": 10,
+        "term": "Unknown",
+        "prompt": "在 Instruction Tuning 阶段，SFT 数据质量对模型 Alignment 效果有什么影响？",
+        "response": "在 Instruction Tuning 阶段，SFT（Segment-Level Fine-Tuning）数据质量对模型 Alignment 效果会产生重要影响。高质量的 SFT 数据可以帮助模型更好地理解任务指令和相关信息，从而提高 Alignment 效果，例如提高模型的任务理解能力和结果准确率。"
+    },
+    {
+        "id": 11,
+        "term": "Unknown",
+        "prompt": "请解释 PEFT 中的 LoRA 技术原理及其参数效率优势。",
+        "response": "LoRA（Low-Rank Adaptation）是一种用于Transformer模型的轻量级参数适应技术。其原理是通过学习一个低秩矩阵来替换原有模型的权重，减少参数量并保持原有模型的表达能力。\n\nLoRA技术通过学习一个低秩矩阵来表示原有模型的权重，通过这种方式，可以有效地减少参数量并且可以保持原有模型的表达能力。这种技术可以大大减少模型大小和计算复杂度。"
+    },
+    {
+        "id": 12,
+        "term": "Unknown",
+        "prompt": "什么是 Quantization-Aware Training？它与 PTQ 有什么本质区别？",
+        "response": "Quantization-Aware Training（QAT）是指在训练神经网络模型的过程中，直接将模型权重和激活量化到指定的量化位宽上，以模拟模型在实际部署时的量化效果，改善量化后的模型性能。与Post-Training Quantization（PTQ）不同，PTQ是在模型已经训练好后，使用优化算法将模型权重和激活量化到指定位宽上，可能会导致模型性能的下降。"
+    },
+    {
+        "id": 13,
+        "term": "Unknown",
+        "prompt": "请分析 FlashAttention 算法是如何通过优化 IO 访问加速计算的？",
+        "response": "FlashAttention 算法通过在 Transformer 中引入了三个关键优化来加速 IO 访问： \n\n1. **Sparse Attention Mechanism**：仅计算需要的 Attention Weights，减少了计算和存储的空间复杂度。\n2. **Rotary Embedding**：通过旋转编码器和解码器的键值矩阵，减少了 Attention Weights 的计算复杂度。\n3. **Linear Attention**：使用线性 Attention 代替自注意力机制，进一步减少计算复杂度。"
+    },
+    {
+        "id": 14,
+        "term": "Unknown",
+        "prompt": "RNN 在 Backpropagation 过程中遇到的 Gradient Vanishing 问题是因何产生的？",
+        "response": "RNN 在 Backpropagation 过程中遇到的 Gradient Vanishing 问题是由于反向传播时梯度值会随着时间步数的增加而迅速减小，导致难以传递到网络深处，导致训练难以收敛的问题。"
+    },
+    {
+        "id": 15,
+        "term": "Unknown",
+        "prompt": "请分析 DDPG 算法在解决连续动作空间控制问题时的策略。",
+        "response": "DDPG（Deep Deterministic Policy Gradient）算法是一种用于解决连续动作空间控制问题的深度强化学习算法。其策略包括：\n\n1. **Actor网络（Policy Network）：** 利用Actor网络预测出在给定状态下最优动作。\n2. **Critic网络（Value Network）：** 利用Critic网络评估给定状态和动作的值函数。\n3. **目标函数：** 定义为Critic网络预测的值函数与目标值函数之间的差值。\n4. **更新网络：** 使用policy gradient法更新Actor网络和Critic网络。\n5. **经验储存：** 将每次交互的状态、动作、奖励和下一个状态储存到经验池中。\n6. **批量训练：** 从经验池中随机采样批量数据，更新Actor和Critic网络。\n\nDDPG算法通过Actor网络和Critic网络之间的交互，能够有效地解决连续动作空间控制问题。"
+    },
+    {
+        "id": 16,
+        "term": "Unknown",
+        "prompt": "相比于 TRPO，PPO 算法是如何通过 Clip 操作简化 Policy Update 的？",
+        "response": "PPO（Proximal Policy Optimization）相比于 TRPO（Trust Region Policy Optimization），通过 Clip 操作简化了 Policy Update。Clip 操作限制了 Policy Update 的范围，使其在一定程度上避免了 TRPO 中的二阶导数计算和Trust Region 的计算。"
+    },
+    {
+        "id": 17,
+        "term": "Unknown",
+        "prompt": "在 ChatGPT 训练流程中，RLHF 阶段的 Reward Model 起到了什么关键作用？",
+        "response": "Reward Model 在 RLHF 阶段起到了关键作用，是用于评估模型行为的评分函数，它帮助训练者定义和优化模型的行为目标，指导模型学习优化的方向，促进模型在目标任务上取得更好的表现。"
+    },
+    {
+        "id": 18,
+        "term": "Unknown",
+        "prompt": "请对比 RLHF 和 DPO 在偏好优化上的优缺点。",
+        "response": "RLHF（Reinforcement Learning from Human Feedback）和DPO（Data Programming by Outcomes）是两种常用的偏好优化方法。比较它们的优缺点如下：\n\n**RLHF**\n\n优点：\n\n* 可以学习复杂的偏好函数\n* 支持多样化的反馈类型\n* 可以用于多任务学习\n\n缺点：\n\n* 需要大量高质量的反馈数据\n* 可能存在偏差和不稳定性\n* 需要复杂的算法和硬件资源\n\n**DPO**\n\n优点：\n\n* 可以学习简单的偏好函数\n* 需要较少的反馈数据\n* 相对稳定和高效\n\n缺点：\n\n* 只适用于简单的偏好函数\n* 可能无法学习复杂的偏好函数\n* 需要大量的数据标注"
+    },
+    {
+        "id": 19,
+        "term": "Unknown",
+        "prompt": "随着 AIGC 爆发，它对传统 Content Creation 行业带来了哪些冲击？",
+        "response": "AIGC（Artificial Intelligence Generated Content）的出现对传统 Content Creation 行业产生了深远影响。它使得机器人能够创作出高质量的内容，如文章、视频和图像，这可能会削弱人类创作者的工作。"
+    },
+    {
+        "id": 20,
+        "term": "Unknown",
+        "prompt": "DDPM 是如何通过 Reverse Denoising Process 生成高质量图像的？",
+        "response": "DDPM（Diffusion-Based Deep Generative Model）通过Reverse Denoising Process生成高质量图像。Reverse Denoising Process是一种逆向过程，逆向从高噪声图像开始，逐步降噪，直到恢复原始清晰图像。这种过程通过多次迭代，使用Transformer等神经网络来学习图像的概率分布，逐步减少噪声，恢复原始图像。"
+    },
+    {
+        "id": 21,
+        "term": "Unknown",
+        "prompt": "请解释 GAN 训练过程中 Generator 与 Discriminator 的博弈机制。",
+        "response": "GAN 训练过程中，Generator 和 Discriminator 之间存在一个博弈机制。Generator 的目标是生成真实样本，使得 Discriminator 无法区分真实样本和生成样本。 Discriminator 的目标是正确识别真实样本和生成样本。 \n\n在每个训练步骤中，Generator 生成一批假样本，然后 Discriminator 评估这些样本的真实度。Generator 根据 Discriminator 的反馈调整自己的参数，以生成更真实的样本。 Discriminator 也根据 Generator 的生成样本调整自己的参数，以提高识别能力。这个博弈过程不断迭代，直到 Generator 和 Discriminator 都达到最佳状态。"
+    },
+    {
+        "id": 22,
+        "term": "Unknown",
+        "prompt": "请简述 CLIP 模型是如何通过 Contrastive Learning 实现图文对齐的？",
+        "response": "CLIP（Contrastive Language-Image Pre-training）模型通过对比学习（Contrastive Learning）实现图文对齐。其原理是通过将一张图像和一段文本作为输入，并利用对比损失函数（Contrastive Loss）优化模型，使得图像和相关文本的嵌入（Embedding）更加相似，而与不相关文本的嵌入更加不同。"
+    },
+    {
+        "id": 23,
+        "term": "Unknown",
+        "prompt": "Stable Diffusion 模型中 Latent Space 的主要作用是什么？",
+        "response": "Stable Diffusion 模型中的 Latent Space 是一个高维度的向量空间，用来表示生成的图像的潜在特征。它的主要作用是：\n\n1. **图像特征提取**: Latent Space 中的向量捕捉了图像的重要特征，例如形状、颜色、纹理等。\n2. **图像生成**: 根据 Latent Space 中的向量，可以生成相应的图像。\n3. **控制图像生成**: 通过调整 Latent Space 中的向量，可以控制图像的生成过程，实现图像的细粒度控制。\n4. **图像压缩**: Latent Space 中的向量可以用来压缩图像，减少图像的存储空间。"
+    },
+    {
+        "id": 24,
+        "term": "Unknown",
+        "prompt": "GCN 是如何利用 Adjacency Matrix 聚合节点特征信息的？",
+        "response": "GCN（Graph Convolutional Network）利用 Adjacency Matrix 将节点特征信息聚合的过程如下：\n\n1. 计算图的 Laplacian 矩阵：L = I - D^(-1/2) * A * D^(-1/2)，其中 A 是 Adjacency Matrix，D 是度矩阵。\n2. 将节点特征信息表示为矩阵 X。\n3. 计算特征矩阵与 Laplacian 矩阵的 Hadamard 产物：Y = σ(D^(-1/2) * A * D^(-1/2) * X)，其中 σ 是激活函数。\n4. 输出 Y 为聚合后的节点特征信息。"
+    },
+    {
+        "id": 25,
+        "term": "Unknown",
+        "prompt": "在处理高维数据时，KNN 面临的 Curse of Dimensionality 具体是指什么？",
+        "response": "Curse of Dimensionality 指的是随着数据维数的增加，距离度量的空间中点之间的距离相等化，导致KNN算法在高维空间中难以有效地找到相似点。"
+    },
+    {
+        "id": 26,
+        "term": "Unknown",
+        "prompt": "请解释 LDA 是如何对 Document-Topic-Word 分布进行建模的？",
+        "response": "LDA（Latent Dirichlet Allocation）是一种基于贝叶斯概率的主题模型。它通过对文档、主题和词语之间的关系进行建模来实现文本主题分析。具体来说，LDA假设：\n\n1. 每个文档可以看作是多个主题的线性组合。\n2. 每个主题是词语的线性组合。\n3. 每个词语都属于某个主题。\n\nLDA使用以下步骤对 Document-Topic-Word 分布进行建模：\n\n1. 对每个文档，生成一个主题分布（主题概率分布），表示每个主题的权重。\n2. 对每个主题，生成一个词语分布（词语概率分布），表示每个词语的权重。\n3. 根据主题分布和词语分布生成文档中的每个词语。\n\n通过这种方式，LDA可以对文档进行主题抽取和主题识别，发现文档之间的共享主题。"
+    },
+    {
+        "id": 27,
+        "term": "Unknown",
+        "prompt": "SVM 引入 Kernel Trick 主要是为了解决什么类型的数据分类问题？",
+        "response": "SVM 引入 Kernel Trick 主要是为了解决线性不可分数据的分类问题。通过将原始空间中的数据映射到高维空间中，使得线性可分，进而实现非线性分类。"
+    },
+    {
+        "id": 28,
+        "term": "Unknown",
+        "prompt": "在复杂推理任务中，CoT 提示策略的核心优势是什么？",
+        "response": "CoT（Continual Transformers）提示策略的核心优势在于，它能够学习和适应序列数据的长期依赖性和动态变化，这有助于改善复杂推理任务的性能。"
+    },
+    {
+        "id": 29,
+        "term": "Unknown",
+        "prompt": "在 IE 流水线中，NER 的准确率对后续 Relation Extraction 有什么影响？",
+        "response": "在 IE 流水线中，NER（命名实体识别）的准确率对后续 Relation Extraction（关系提取）有着重要影响。准确的 NER 可能会带来更好的关系提取结果，因为它能提供准确的实体识别，这是关系提取的基础。"
+    },
+    {
+        "id": 30,
+        "term": "Unknown",
+        "prompt": "将 KG 引入 LLM 推理中，能否有效缓解 Hallucination 问题？",
+        "response": "引入知识图谱（Knowledge Graph, KG）到语言模型（Large Language Model, LLM）中可以帮助缓解hallucination问题。KG提供了结构化的知识，LLM可以根据KG的知识进行知识检索和校验，从而减少hallucination的发生。"
+    },
+    {
+        "id": 31,
+        "term": "Unknown",
+        "prompt": "YOLO 系列相比于 Two-stage Detector 在推理速度上的优势源自哪里？",
+        "response": "YOLO（You Only Look Once）相比于 Two-stage Detector 的推理速度优势源自其一次性检测的特点。Two-stage Detector 需要先生成 Region Proposal（候选区域），然后进行分类和回归，而 YOLO 通过一阶段的神经网络直接输出检测结果，省去了候选区域的生成过程，从而大大提高了检测速度。"
+    },
+    {
+        "id": 32,
+        "term": "Unknown",
+        "prompt": "RAG 系统中 Retrieval 阶段的准确性如何影响最终生成的 Fidelity？",
+        "response": "在 RAG 系统（Retrieve-Augment-Generate）中，Retrieval 阶段的准确性对最终生成的 Fidelity 有直接影响。Retrieval 阶段的准确性决定了模型从知识库中检索到的信息的准确性，如果 Retrieval 阶段的准确性较低，可能会导致生成的结果不准确或不相关，从而影响最终生成的 Fidelity。"
+    }
+]

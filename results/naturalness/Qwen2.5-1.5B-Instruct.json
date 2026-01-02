@@ -1,0 +1,194 @@
+[
+    {
+        "id": 1,
+        "term": "Unknown",
+        "prompt": "请从技术角度定义一下 AI 的核心目标及其在现代社会的应用。",
+        "response": "AI的核心目标是通过模拟人类智能来实现特定任务或决策支持。其广泛应用于自动驾驶、医疗诊断、金融服务、智能家居等领域，极大地提高了效率和生活质量。"
+    },
+    {
+        "id": 2,
+        "term": "Unknown",
+        "prompt": "相比于目前的 Narrow AI，实现 AGI 的主要技术瓶颈在哪里？",
+        "response": "The primary technical bottleneck for achieving AGI lies in the current state of Narrow AI."
+    },
+    {
+        "id": 3,
+        "term": "Unknown",
+        "prompt": "请解释 BERT 预训练阶段 MLM 任务的原理。",
+        "response": "BERT 在预训练阶段通过 Masked Language Modeling（MLM）任务，利用大量文本数据学习上下文信息和语义表示。"
+    },
+    {
+        "id": 4,
+        "term": "Unknown",
+        "prompt": "为什么 CNN 的卷积核设计比 Fully Connected Layer 更高效？",
+        "response": "CNN 使用小的、共享的卷积核实现局部特征学习和空间位置不变性，而 FC 层进行全连接操作无法利用局部信息。"
+    },
+    {
+        "id": 5,
+        "term": "Unknown",
+        "prompt": "GPT 系列模型坚持使用 Decoder-only 架构的主要原因是什么？",
+        "response": "Decoder-only架构使模型能够更好地捕捉上下文的顺序和依赖性。"
+    },
+    {
+        "id": 6,
+        "term": "Unknown",
+        "prompt": "相比于 LSTM，GRU 在 Gating 机制上做了哪些简化以提升计算效率？",
+        "response": "GRU 简化了 LSTMs 的遗忘门和输入门，通过自注意力机制实现更高效的计算。"
+    },
+    {
+        "id": 7,
+        "term": "Unknown",
+        "prompt": "LSTM 是如何通过 Forget Gate 和 Input Gate 解决 RNN 的 Long-term Dependency 问题的？",
+        "response": "LSTMs use the Forget Gate and Input Gate to selectively retain or discard information over time, thus addressing long-term dependencies in sequences."
+    },
+    {
+        "id": 8,
+        "term": "Unknown",
+        "prompt": "ViT 是如何将 2D 图像转化为 Sequence 数据输入 Transformer 的？",
+        "response": "Vision Transformers (ViTs) represent images as sequences of patches, similar to how CNNs do. Each patch is further fed into a transformer for sequence processing."
+    },
+    {
+        "id": 9,
+        "term": "Unknown",
+        "prompt": "训练千亿参数级 LLM，通常需要哪些阶段的数据清洗和 Pre-training 预处理？",
+        "response": "Training large language models requires data cleaning and pre-training preprocessing."
+    },
+    {
+        "id": 10,
+        "term": "Unknown",
+        "prompt": "在 Instruction Tuning 阶段，SFT 数据质量对模型 Alignment 效果有什么影响？",
+        "response": "In the Instruction Tuning stage, the quality of SFT data affects the alignment effect of model."
+    },
+    {
+        "id": 11,
+        "term": "Unknown",
+        "prompt": "请解释 PEFT 中的 LoRA 技术原理及其参数效率优势。",
+        "response": "LoRA是一种微调方法，通过减少权重数量来提高训练速度和资源利用效率。"
+    },
+    {
+        "id": 12,
+        "term": "Unknown",
+        "prompt": "什么是 Quantization-Aware Training？它与 PTQ 有什么本质区别？",
+        "response": "Quantization-aware training adjusts the learning process to optimize quantized models, differing from Proximal Quasi-Newton Training (PTQ) which focuses on post-training quantization."
+    },
+    {
+        "id": 13,
+        "term": "Unknown",
+        "prompt": "请分析 FlashAttention 算法是如何通过优化 IO 访问加速计算的？",
+        "response": "FlashAttention 通过预训练和量化来优化 IO 访问，从而加速计算。"
+    },
+    {
+        "id": 14,
+        "term": "Unknown",
+        "prompt": "RNN 在 Backpropagation 过程中遇到的 Gradient Vanishing 问题是因何产生的？",
+        "response": "Gradient Vanishing 是由于在 RNN 中梯度在每个时间步递减导致的。"
+    },
+    {
+        "id": 15,
+        "term": "Unknown",
+        "prompt": "请分析 DDPG 算法在解决连续动作空间控制问题时的策略。",
+        "response": "Deep Deterministic Policy Gradient (DDPG) is a reinforcement learning algorithm designed to handle environments with continuous action spaces, enabling effective exploration and exploitation in complex control tasks."
+    },
+    {
+        "id": 16,
+        "term": "Unknown",
+        "prompt": "相比于 TRPO，PPO 算法是如何通过 Clip 操作简化 Policy Update 的？",
+        "response": "PPO 使用 clip 操作来简化 policy update, unlike TRPO."
+    },
+    {
+        "id": 17,
+        "term": "Unknown",
+        "prompt": "在 ChatGPT 训练流程中，RLHF 阶段的 Reward Model 起到了什么关键作用？",
+        "response": "In the RLHF stage of the ChatGPT training process, the Reward Model played a crucial role in shaping human feedback."
+    },
+    {
+        "id": 18,
+        "term": "Unknown",
+        "prompt": "请对比 RLHF 和 DPO 在偏好优化上的优缺点。",
+        "response": "RLHF（Reinforcement Learning for Human-in-the-Loop）允许人类反馈指导强化学习算法进行任务优化。相比之下，DPO（Deep Preference Optimization）通过深度神经网络学习用户偏好来改进推荐系统。RLHF的优点在于能够实时调整策略以适应用户的反馈，但缺点是需要大量的人工标注数据和对环境的理解。而DPO则能自动学习用户偏好的复杂模式，但可能难以快速迭代和适应新需求。"
+    },
+    {
+        "id": 19,
+        "term": "Unknown",
+        "prompt": "随着 AIGC 爆发，它对传统 Content Creation 行业带来了哪些冲击？",
+        "response": "Artificial Intelligence Generated Content (AIGC) is reshaping the traditional content creation industry."
+    },
+    {
+        "id": 20,
+        "term": "Unknown",
+        "prompt": "DDPM 是如何通过 Reverse Denoising Process 生成高质量图像的？",
+        "response": "DeepDream uses a reverse denoising process to enhance the visual complexity of images."
+    },
+    {
+        "id": 21,
+        "term": "Unknown",
+        "prompt": "请解释 GAN 训练过程中 Generator 与 Discriminator 的博弈机制。",
+        "response": "在 Generative Adversarial Network (GAN) 中，Generator 和 Discriminator 进行了对抗性训练，以生成逼真的样本来欺骗对方，从而不断改进模型。"
+    },
+    {
+        "id": 22,
+        "term": "Unknown",
+        "prompt": "请简述 CLIP 模型是如何通过 Contrastive Learning 实现图文对齐的？",
+        "response": "CLIP 使用 contrastive learning 方法，在大量文本和图像数据上进行预训练，然后在与源域相似的新数据集上进行微调，以实现对文本和图像内容的高效匹配。"
+    },
+    {
+        "id": 23,
+        "term": "Unknown",
+        "prompt": "Stable Diffusion 模型中 Latent Space 的主要作用是什么？",
+        "response": "Latent Space 在 Stable Diffusion 中用于表示图像的潜在空间，每个点代表一个不同的视觉特征或形状。"
+    },
+    {
+        "id": 24,
+        "term": "Unknown",
+        "prompt": "GCN 是如何利用 Adjacency Matrix 聚合节点特征信息的？",
+        "response": "GCN 通过卷积操作在邻接矩阵上聚合节点特征信息。"
+    },
+    {
+        "id": 25,
+        "term": "Unknown",
+        "prompt": "在处理高维数据时，KNN 面临的 Curse of Dimensionality 具体是指什么？",
+        "response": "In high-dimensional data, KNN suffers from the Curse of Dimensionality."
+    },
+    {
+        "id": 26,
+        "term": "Unknown",
+        "prompt": "请解释 LDA 是如何对 Document-Topic-Word 分布进行建模的？",
+        "response": "LDA（Latent Dirichlet Allocation）是一种主题模型，用于将文档表示为一个包含多个主题向量的分布。"
+    },
+    {
+        "id": 27,
+        "term": "Unknown",
+        "prompt": "SVM 引入 Kernel Trick 主要是为了解决什么类型的数据分类问题？",
+        "response": "Support Vector Machines (SVM) use the Kernel Trick to handle non-linearly separable data."
+    },
+    {
+        "id": 28,
+        "term": "Unknown",
+        "prompt": "在复杂推理任务中，CoT 提示策略的核心优势是什么？",
+        "response": "CoT提示策略通过增强模型对上下文的理解和推理能力来提高复杂任务的性能。"
+    },
+    {
+        "id": 29,
+        "term": "Unknown",
+        "prompt": "在 IE 流水线中，NER 的准确率对后续 Relation Extraction 有什么影响？",
+        "response": "In the IE pipeline, the accuracy of NER impacts Relation Extraction by providing relevant entity mentions for downstream tasks."
+    },
+    {
+        "id": 30,
+        "term": "Unknown",
+        "prompt": "将 KG 引入 LLM 推理中，能否有效缓解 Hallucination 问题？",
+        "response": "Yes, incorporating Knowledge Graphs into Large Language Models can help mitigate the hallucination problem by providing structured knowledge."
+    },
+    {
+        "id": 31,
+        "term": "Unknown",
+        "prompt": "YOLO 系列相比于 Two-stage Detector 在推理速度上的优势源自哪里？",
+        "response": "YOLO系列的优势在于端到端训练和检测，而Two-stageDetector依赖于特征提取阶段。"
+    },
+    {
+        "id": 32,
+        "term": "Unknown",
+        "prompt": "RAG 系统中 Retrieval 阶段的准确性如何影响最终生成的 Fidelity？",
+        "response": "The accuracy of the retrieval stage in RAG systems affects the final fidelity."
+    }
+]

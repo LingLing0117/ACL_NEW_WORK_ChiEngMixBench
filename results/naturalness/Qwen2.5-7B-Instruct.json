@@ -1,0 +1,194 @@
+[
+    {
+        "id": 1,
+        "term": "Unknown",
+        "prompt": "请从技术角度定义一下 AI 的核心目标及其在现代社会的应用。",
+        "response": "AI的核心目标是使机器能够执行通常需要人类智能的任务，如视觉识别、语言理解、决策制定等；其应用包括自动驾驶、个性化推荐、医疗诊断等。"
+    },
+    {
+        "id": 2,
+        "term": "Unknown",
+        "prompt": "相比于目前的 Narrow AI，实现 AGI 的主要技术瓶颈在哪里？",
+        "response": "Achieving AGI的主要技术瓶颈在于扩展当前模型的通用性和理解能力，超越特定任务优化。"
+    },
+    {
+        "id": 3,
+        "term": "Unknown",
+        "prompt": "请解释 BERT 预训练阶段 MLM 任务的原理。",
+        "response": "BERT预训练阶段的MLM任务通过随机掩蔽输入词汇并让模型预测被掩蔽的词来学习语言表示。"
+    },
+    {
+        "id": 4,
+        "term": "Unknown",
+        "prompt": "为什么 CNN 的卷积核设计比 Fully Connected Layer 更高效？",
+        "response": "CNN 的卷积核设计通过局部连接和权重共享减少参数数量，更高效处理网格状数据结构。"
+    },
+    {
+        "id": 5,
+        "term": "Unknown",
+        "prompt": "GPT 系列模型坚持使用 Decoder-only 架构的主要原因是什么？",
+        "response": "GPT系列模型采用Decoder-only架构主要原因是提高并行性和简化训练过程。"
+    },
+    {
+        "id": 6,
+        "term": "Unknown",
+        "prompt": "相比于 LSTM，GRU 在 Gating 机制上做了哪些简化以提升计算效率？",
+        "response": "GRU简化了LSTM的输入门和输出门为更新门和重置门，提升了计算效率。"
+    },
+    {
+        "id": 7,
+        "term": "Unknown",
+        "prompt": "LSTM 是如何通过 Forget Gate 和 Input Gate 解决 RNN 的 Long-term Dependency 问题的？",
+        "response": "LSTM uses Forget Gate and Input Gate to control the flow of information, effectively addressing long-term dependency issues in RNNs."
+    },
+    {
+        "id": 8,
+        "term": "Unknown",
+        "prompt": "ViT 是如何将 2D 图像转化为 Sequence 数据输入 Transformer 的？",
+        "response": "ViT 将 2D 图像分割为 patches 并线性展平成 sequence 输入 Transformer。"
+    },
+    {
+        "id": 9,
+        "term": "Unknown",
+        "prompt": "训练千亿参数级 LLM，通常需要哪些阶段的数据清洗和 Pre-training 预处理？",
+        "response": "Data cleaning and pre-processing typically involve text normalization, removing noise, tokenization, and creating a large-scale corpus suitable for pre-training LLMs with billions of parameters."
+    },
+    {
+        "id": 10,
+        "term": "Unknown",
+        "prompt": "在 Instruction Tuning 阶段，SFT 数据质量对模型 Alignment 效果有什么影响？",
+        "response": "High-quality SFT data improves model alignment in the Instruction Tuning phase."
+    },
+    {
+        "id": 11,
+        "term": "Unknown",
+        "prompt": "请解释 PEFT 中的 LoRA 技术原理及其参数效率优势。",
+        "response": "LoRA 在 PEFT 中通过低秩分解技术在注意力模块中引入低秩矩阵参数，大幅减少整体参数量。"
+    },
+    {
+        "id": 12,
+        "term": "Unknown",
+        "prompt": "什么是 Quantization-Aware Training？它与 PTQ 有什么本质区别？",
+        "response": "Quantization-Aware Training 是在量化意识下训练，旨在减少量化带来的误差；PTQ（Post-Training Quantization）则是在训练后进行量化，不考虑模型训练过程中的量化影响。"
+    },
+    {
+        "id": 13,
+        "term": "Unknown",
+        "prompt": "请分析 FlashAttention 算法是如何通过优化 IO 访问加速计算的？",
+        "response": "FlashAttention 通过局部性优化和细粒度并行减少全局内存访问延迟和带宽瓶颈，加速计算。"
+    },
+    {
+        "id": 14,
+        "term": "Unknown",
+        "prompt": "RNN 在 Backpropagation 过程中遇到的 Gradient Vanishing 问题是因何产生的？",
+        "response": "Gradient Vanishing is due to the repeated multiplication of small weights during backpropagation in RNNs."
+    },
+    {
+        "id": 15,
+        "term": "Unknown",
+        "prompt": "请分析 DDPG 算法在解决连续动作空间控制问题时的策略。",
+        "response": "DDPG算法通过Actor-Critic架构和经验回放机制，在连续动作空间中有效学习控制策略。"
+    },
+    {
+        "id": 16,
+        "term": "Unknown",
+        "prompt": "相比于 TRPO，PPO 算法是如何通过 Clip 操作简化 Policy Update 的？",
+        "response": "PPO通过Clip操作限制策略更新的幅度，简化了PolicyUpdate过程。"
+    },
+    {
+        "id": 17,
+        "term": "Unknown",
+        "prompt": "在 ChatGPT 训练流程中，RLHF 阶段的 Reward Model 起到了什么关键作用？",
+        "response": "Reward Model 在 RLHF 中用于评估生成文本的质量，指导模型学习更优的响应。"
+    },
+    {
+        "id": 18,
+        "term": "Unknown",
+        "prompt": "请对比 RLHF 和 DPO 在偏好优化上的优缺点。",
+        "response": "RLHF在样本效率和控制模型行为上更优，而DPO在保持模型多样性和泛化能力方面更有优势。"
+    },
+    {
+        "id": 19,
+        "term": "Unknown",
+        "prompt": "随着 AIGC 爆发，它对传统 Content Creation 行业带来了哪些冲击？",
+        "response": "AIGC的爆发对传统ContentCreation行业带来了自动化和效率的冲击，重塑了内容生成和分发模式。"
+    },
+    {
+        "id": 20,
+        "term": "Unknown",
+        "prompt": "DDPM 是如何通过 Reverse Denoising Process 生成高质量图像的？",
+        "response": "DDPM利用Reverse Denoising Process逐步去除噪声，生成高质量图像。"
+    },
+    {
+        "id": 21,
+        "term": "Unknown",
+        "prompt": "请解释 GAN 训练过程中 Generator 与 Discriminator 的博弈机制。",
+        "response": "In GAN training, Generator and Discriminator engage in an adversarial process where Generator produces fake data to fool Discriminator, while Discriminator aims to distinguish real from fake data."
+    },
+    {
+        "id": 22,
+        "term": "Unknown",
+        "prompt": "请简述 CLIP 模型是如何通过 Contrastive Learning 实现图文对齐的？",
+        "response": "CLIP模型通过ContrastiveLearning机制，在高维空间中对图像和文本进行编码，并最大化相同文本描述的图像之间的相似度，同时最小化不同文本描述的图像之间的相似度，实现图文对齐。"
+    },
+    {
+        "id": 23,
+        "term": "Unknown",
+        "prompt": "Stable Diffusion 模型中 Latent Space 的主要作用是什么？",
+        "response": "Latent Space in Stable Diffusion models serves to represent and manipulate high-level features of data."
+    },
+    {
+        "id": 24,
+        "term": "Unknown",
+        "prompt": "GCN 是如何利用 Adjacency Matrix 聚合节点特征信息的？",
+        "response": "GCN 通过对相邻节点特征进行加权求和的方式，uses the adjacency matrix  aggregate node feature information."
+    },
+    {
+        "id": 25,
+        "term": "Unknown",
+        "prompt": "在处理高维数据时，KNN 面临的 Curse of Dimensionality 具体是指什么？",
+        "response": "Curse of Dimensionality in KNN for high-dimensional data refers to the deterioration of classification performance due to increased data sparsity."
+    },
+    {
+        "id": 26,
+        "term": "Unknown",
+        "prompt": "请解释 LDA 是如何对 Document-Topic-Word 分布进行建模的？",
+        "response": "LDA models the Document-Topic-Word distribution by assuming each document is a mixture of topics, and each topic is a distribution over words."
+    },
+    {
+        "id": 27,
+        "term": "Unknown",
+        "prompt": "SVM 引入 Kernel Trick 主要是为了解决什么类型的数据分类问题？",
+        "response": "SVM引入Kernel Trick主要是为了解决非线性数据分类问题。"
+    },
+    {
+        "id": 28,
+        "term": "Unknown",
+        "prompt": "在复杂推理任务中，CoT 提示策略的核心优势是什么？",
+        "response": "CoT提示策略的核心优势在于引导模型进行显式的逐步推理。"
+    },
+    {
+        "id": 29,
+        "term": "Unknown",
+        "prompt": "在 IE 流水线中，NER 的准确率对后续 Relation Extraction 有什么影响？",
+        "response": "NER accuracy significantly impacts Relation Extraction in the IE pipeline."
+    },
+    {
+        "id": 30,
+        "term": "Unknown",
+        "prompt": "将 KG 引入 LLM 推理中，能否有效缓解 Hallucination 问题？",
+        "response": "Integrating KG into LLM inference can potentially alleviate the Hallucination issue."
+    },
+    {
+        "id": 31,
+        "term": "Unknown",
+        "prompt": "YOLO 系列相比于 Two-stage Detector 在推理速度上的优势源自哪里？",
+        "response": "YOLO系列的优势源自一次性完成检测，避免了Two-stage Detector需要进行Region Proposal的额外步骤。"
+    },
+    {
+        "id": 32,
+        "term": "Unknown",
+        "prompt": "RAG 系统中 Retrieval 阶段的准确性如何影响最终生成的 Fidelity？",
+        "response": "Accuracy of the Retrieval phase significantly impacts the Fidelity of the final generated responses in RAG systems."
+    }
+]

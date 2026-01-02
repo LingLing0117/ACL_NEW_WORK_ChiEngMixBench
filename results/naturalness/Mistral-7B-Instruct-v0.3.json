@@ -1,0 +1,194 @@
+[
+    {
+        "id": 1,
+        "term": "Unknown",
+        "prompt": "请从技术角度定义一下 AI 的核心目标及其在现代社会的应用。",
+        "response": "AI's core objective is to develop intelligent systems that can perform tasks that typically require human intelligence, such as learning, reasoning, problem-solving, and perception. Its applications in modern society range from speech recognition and natural language processing in virtual assistants, to image recognition in self-driving cars, to personalized recommendations in e-commerce platforms."
+    },
+    {
+        "id": 2,
+        "term": "Unknown",
+        "prompt": "相比于目前的 Narrow AI，实现 AGI 的主要技术瓶颈在哪里？",
+        "response": "主要技术瓶颈在于实现人类水平的泛化能力和理解能力，以及实现自我学习和反思能力。"
+    },
+    {
+        "id": 3,
+        "term": "Unknown",
+        "prompt": "请解释 BERT 预训练阶段 MLM 任务的原理。",
+        "response": "BERT (Bidirectional Encoder Representations from Transformers) 的预训练阶段中，Masked Language Modeling (MLM) 任务旨在学习单词在句子中的语境，通过随机掩盖文本中的一些单词，然后让模型预测掩盖单词的原始单词。这个过程帮助 BERT 学习语言模型，并捕捉到句子中单词之间的关系。"
+    },
+    {
+        "id": 4,
+        "term": "Unknown",
+        "prompt": "为什么 CNN 的卷积核设计比 Fully Connected Layer 更高效？",
+        "response": "Convolutional Neural Networks (CNNs) are more efficient than Fully Connected Layers because CNNs use local connections that respond to specific features, reducing the number of parameters and computations required, unlike fully connected layers which have global connections and require processing every pixel of an input image."
+    },
+    {
+        "id": 5,
+        "term": "Unknown",
+        "prompt": "GPT 系列模型坚持使用 Decoder-only 架构的主要原因是什么？",
+        "response": "GPT series models use Decoder-only architecture primarily to reduce computational complexity and improve efficiency, as the encoder's output can be used as the input to the decoder, eliminating the need for cross-attention between encoder and decoder layers."
+    },
+    {
+        "id": 6,
+        "term": "Unknown",
+        "prompt": "相比于 LSTM，GRU 在 Gating 机制上做了哪些简化以提升计算效率？",
+        "response": "Compared to LSTM, GRU simplified its gating mechanism by combining the update gate and reset gate into a single update gate, reducing the number of parameters and improving computational efficiency."
+    },
+    {
+        "id": 7,
+        "term": "Unknown",
+        "prompt": "LSTM 是如何通过 Forget Gate 和 Input Gate 解决 RNN 的 Long-term Dependency 问题的？",
+        "response": "LSTM 通过 Forget Gate 和 Input Gate 解决 RNN 的 Long-term Dependency 问题，因为它们可以控制当前时间步骤的输入和遗忘之前时间步骤的信息，从而有效地处理长期依赖性。"
+    },
+    {
+        "id": 8,
+        "term": "Unknown",
+        "prompt": "ViT 是如何将 2D 图像转化为 Sequence 数据输入 Transformer 的？",
+        "response": "ViT (Vision Transformer) 通过将图像分成固定大小的 patch 并将每个 patch 表示为 embedding 向量，然后将这些 embedding 组成 Sequence 作为 Transformer 的输入，来将 2D 图像转化为 Sequence 数据。"
+    },
+    {
+        "id": 9,
+        "term": "Unknown",
+        "prompt": "训练千亿参数级 LLM，通常需要哪些阶段的数据清洗和 Pre-training 预处理？",
+        "response": "训练千亿参数级 Transformer 需要数据清洗（Data Cleaning）和 Pre-training 预处理（Pre-training Preprocessing），包括 Tokenization（令牌化）、Masking（掩码）、Next Sentence Prediction（下一句预测）和 Sequence Length Normalization（序列长度规范化）。"
+    },
+    {
+        "id": 10,
+        "term": "Unknown",
+        "prompt": "在 Instruction Tuning 阶段，SFT 数据质量对模型 Alignment 效果有什么影响？",
+        "response": "在 Instruction Tuning 阶段，SFT 数据的质量直接影响模型的 Alignment 效果，因为它会影响模型学习到的指令和答案之间的映射关系。"
+    },
+    {
+        "id": 11,
+        "term": "Unknown",
+        "prompt": "请解释 PEFT 中的 LoRA 技术原理及其参数效率优势。",
+        "response": "LoRA (Layer-wise Adaptive Quantization) 是一种轻量级参数适应性量化技术，用于在Transformer模型中进行参数压缩。它通过在模型训练过程中保持全量参数的精度，并在推理阶段进行低精度量化来实现参数压缩。 LoRA 具有高效的参数压缩率和低损失的优点，可以在模型大小和推理速度上带来明显的提升。"
+    },
+    {
+        "id": 12,
+        "term": "Unknown",
+        "prompt": "什么是 Quantization-Aware Training？它与 PTQ 有什么本质区别？",
+        "response": "Quantization-Aware Training (QAT) is a technique that trains a model to maintain accuracy while being quantized during inference, by applying quantization during training. This differs from Post-Training Quantization (PTQ) as QAT involves quantization during the training process, while PTQ quantizes a pre-trained model without modifying the training process."
+    },
+    {
+        "id": 13,
+        "term": "Unknown",
+        "prompt": "请分析 FlashAttention 算法是如何通过优化 IO 访问加速计算的？",
+        "response": "FlashAttention 算法通过将 Attention 矩阵的预计算和缓存以及块式处理方式，减少了重复计算和IO访问，从而提高了计算效率。"
+    },
+    {
+        "id": 14,
+        "term": "Unknown",
+        "prompt": "RNN 在 Backpropagation 过程中遇到的 Gradient Vanishing 问题是因何产生的？",
+        "response": "RNN 在 Backpropagation 过程中的 Gradient Vanishing 问题是由于梯度反向传播中长序列的梯度爆炸和梯度消失问题而产生的，主要是由于梯度在传播过程中递归计算时，会逐渐衰减或消失，导致网络难以学习长序列数据。"
+    },
+    {
+        "id": 15,
+        "term": "Unknown",
+        "prompt": "请分析 DDPG 算法在解决连续动作空间控制问题时的策略。",
+        "response": "DDPG 算法 (Deep Deterministic Policy Gradient) 在连续动作空间控制问题中，采用 actor-critic 框架，通过使用深度神经网络来学习策略和价值函数，并利用 DQN 中的经验重放缓存和优化算法来更新模型，从而实现强化学习的策略梯度近似，以优化动作选择和状态评估。"
+    },
+    {
+        "id": 16,
+        "term": "Unknown",
+        "prompt": "相比于 TRPO，PPO 算法是如何通过 Clip 操作简化 Policy Update 的？",
+        "response": "PPO 算法通过 Clip 操作简化 Policy Update 方式是通过限制梯度更新范围，防止梯度爆炸或消失，从而使 Policy Update 更加稳定和有效。"
+    },
+    {
+        "id": 17,
+        "term": "Unknown",
+        "prompt": "在 ChatGPT 训练流程中，RLHF 阶段的 Reward Model 起到了什么关键作用？",
+        "response": "RLHF (Reinforcement Learning from Human Feedback) 阶段的 Reward Model 在 ChatGPT 训练过程中起到了关键作用，因为它根据人类对模型生成的对话的反馈来调整模型的行为，以鼓励模型生成符合人类期望的响应，从而使模型更加人类化和合理。"
+    },
+    {
+        "id": 18,
+        "term": "Unknown",
+        "prompt": "请对比 RLHF 和 DPO 在偏好优化上的优缺点。",
+        "response": "RLHF (Reinforcement Learning with Human Feedback) 可以从人类反馈中学习更具有人类风格的模型，但它需要大量人工标注，而 DPO (Differential Privacy Optimization) 可以保护隐私，但可能会导致性能降低。"
+    },
+    {
+        "id": 19,
+        "term": "Unknown",
+        "prompt": "随着 AIGC 爆发，它对传统 Content Creation 行业带来了哪些冲击？",
+        "response": "Transformer-based AI models, like me, have disrupted traditional Content Creation industries by automating text-based tasks, potentially reducing demand for human writers and editors in certain areas. However, they also open up new opportunities for creativity and efficiency enhancements."
+    },
+    {
+        "id": 20,
+        "term": "Unknown",
+        "prompt": "DDPM 是如何通过 Reverse Denoising Process 生成高质量图像的？",
+        "response": "DDPM (Denoising Diffusion Probabilistic Models) 通过反向扰动过程逐步掩盖图像，然后使用反向过程恢复原始清晰图像，从而生成高质量图像。"
+    },
+    {
+        "id": 21,
+        "term": "Unknown",
+        "prompt": "请解释 GAN 训练过程中 Generator 与 Discriminator 的博弈机制。",
+        "response": "GAN (Generative Adversarial Network) 训练过程中，Generator 和 Discriminator 在博弈中互相竞争，Generator 生成假数据，而 Discriminator 尝试区分真实数据和生成的假数据。这种博弈机制鼓励 Generator 生成更实际和有质量的数据，同时 Discriminator 逐渐更好地了解真实数据的特征。"
+    },
+    {
+        "id": 22,
+        "term": "Unknown",
+        "prompt": "请简述 CLIP 模型是如何通过 Contrastive Learning 实现图文对齐的？",
+        "response": "CLIP (Contrastive Language-Image Pre-training) 模型通过 Contrastive Learning 方法学习图片和文字之间的对应关系。它是通过对一组图片和文本对的正对照和负对照进行比较，来学习图片和文本的共同特征和差异，从而实现图文对齐。"
+    },
+    {
+        "id": 23,
+        "term": "Unknown",
+        "prompt": "Stable Diffusion 模型中 Latent Space 的主要作用是什么？",
+        "response": "In Stable Diffusion models, the Latent Space serves as a space where the data distribution evolves over time, allowing for the generation of new samples that are similar to the original data distribution."
+    },
+    {
+        "id": 24,
+        "term": "Unknown",
+        "prompt": "GCN 是如何利用 Adjacency Matrix 聚合节点特征信息的？",
+        "response": "GCN (Graph Convolutional Network) 利用 Adjacency Matrix 进行节点特征聚合，通过应用简单的卷积操作（Convolutional Layer），将邻居节点的特征相加并平均分配给当前节点。"
+    },
+    {
+        "id": 25,
+        "term": "Unknown",
+        "prompt": "在处理高维数据时，KNN 面临的 Curse of Dimensionality 具体是指什么？",
+        "response": "In high-dimensional data, Curse of Dimensionality in KNN (K-Nearest Neighbors) refers to the phenomenon where the number of neighbors required to accurately classify or estimate the density increases dramatically as the dimensionality increases, leading to poor generalization performance."
+    },
+    {
+        "id": 26,
+        "term": "Unknown",
+        "prompt": "请解释 LDA 是如何对 Document-Topic-Word 分布进行建模的？",
+        "response": "LDA (Latent Dirichlet Allocation) 是一种主题模型，用于对文档和词汇之间的关系进行建模。它假设每个文档由多个主题组成，每个主题由一组相关词汇组成。LDA 通过学习文档和词汇之间的统计分布，来推断每个文档的主题分配和每个主题的词汇分布。"
+    },
+    {
+        "id": 27,
+        "term": "Unknown",
+        "prompt": "SVM 引入 Kernel Trick 主要是为了解决什么类型的数据分类问题？",
+        "response": "SVM 引入 Kernel Trick 是为了解决非线性数据分类问题。"
+    },
+    {
+        "id": 28,
+        "term": "Unknown",
+        "prompt": "在复杂推理任务中，CoT 提示策略的核心优势是什么？",
+        "response": "CoT 提示策略的核心优势在于它能够使模型更好地理解长期依赖性和复杂推理，通过构建多层的递归架构来模拟人类的思维过程，并通过注意力机制来捕捉关键信息，从而提高模型在复杂推理任务中的性能。"
+    },
+    {
+        "id": 29,
+        "term": "Unknown",
+        "prompt": "在 IE 流水线中，NER 的准确率对后续 Relation Extraction 有什么影响？",
+        "response": "在 IE 流水线中，NER 的准确率对后续 Relation Extraction 非常重要，因为错误的 Named Entity 识别会导致不正确的实体关系提取。"
+    },
+    {
+        "id": 30,
+        "term": "Unknown",
+        "prompt": "将 KG 引入 LLM 推理中，能否有效缓解 Hallucination 问题？",
+        "response": "在某些情况下，将 Knowledge Graph (KG) 引入 Language Model (LLM) 推理中可以有效缓解 Hallucination 问题，因为 KG 可以提供外部知识来校正 LLM 生成的错误信息。"
+    },
+    {
+        "id": 31,
+        "term": "Unknown",
+        "prompt": "YOLO 系列相比于 Two-stage Detector 在推理速度上的优势源自哪里？",
+        "response": "YOLO (You Only Look Once) 系列的推理速度优势主要来自于它的单次预测机制，每次只预测一次，而不是经过多次 NMS (Non-Maximum Suppression) 和分段的过程，从而实现了更快的速度。"
+    },
+    {
+        "id": 32,
+        "term": "Unknown",
+        "prompt": "RAG 系统中 Retrieval 阶段的准确性如何影响最终生成的 Fidelity？",
+        "response": "RAG 系统中，Retrieval 阶段的准确性直接影响最终生成的 Fidelity，因为它会影响模型生成时的输入数据的准确性和完整性。"
+    }
+]
